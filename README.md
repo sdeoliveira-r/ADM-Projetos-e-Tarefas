@@ -1,5 +1,5 @@
 # ADM-Projetos-e-Tarefas
-Aplicação para o gerenciamento de projetos e as tarefas envolvidas nesses projetos
+Aplicação para o gerenciamento de projetos e tarefas
 
 
 1. Iniciando o projeto
@@ -41,3 +41,18 @@ Aplicação para o gerenciamento de projetos e as tarefas envolvidas nesses proj
  - MySQL
 
 1.1.4. Etapas do desenvolvimento
+
+- Criação do banco de dados [ok]
+ - Criação das classes de modelo [ok]
+ - Criação da conexão com o banco de dados [ok]
+ - Criação das classes de controle (Acesso aos dados do banco [ok]
+ - Criação das interfaces gráfica [ok]
+  - Criação da tela principal [ok]
+  - Criação do CellRederer Prazo 
+  - Criação do CellRederer Editar e Deletar
+  - Criação da tela de Cadastro de Projeto [ok]
+  - Criação da tela de Cadastro de Tarefas [ok]
+ - Implementação dos eventos
+  - Validações
+ - Ajustes finais
+ - Teste da aplicação
