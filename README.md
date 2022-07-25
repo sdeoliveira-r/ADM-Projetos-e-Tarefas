@@ -38,9 +38,8 @@
 
 1.1.3. DEFINIÇÃO DAS TECNOLOGIAS UTILIZADAS
 
- - NetBeans IDE
- - Java
- - MySQL
+ - <img align="center" alt="Ubuntu" height="54" width="72" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
+ - <img align="center" alt="Ubuntu" height="54" width="72" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
 
 1.1.4. ETAPAS DO DESENVOLVIMENTO
 
