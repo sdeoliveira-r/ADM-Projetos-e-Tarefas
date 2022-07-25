@@ -1,7 +1,7 @@
 # ADM-Projetos-e-Tarefas
-Aplicação para o gerenciamento de projetos e tarefas
 
-
+###### Aplicação para o gerenciamento de projetos e tarefas
+##
 1. INICIANDO O PROJETO
 
 1.1. DEFINIÇÃO BÁSICA DO PROJETO
@@ -16,18 +16,19 @@ Aplicação para o gerenciamento de projetos e tarefas
 
 - ENTIDADES:
 
- - Projeto - Atributos: Nome, Descrição, Data de Criação, Data de Atualização.
+  Projeto
+  - Atributos: Nome, Descrição, Data de Criação, Data de Atualização
 
- - Tarefa - Atributos: Nome, Descrição, Status, Observações, Prazo, Data de Criação, Data de Atualização.
+  Tarefa
+  - Atributos: Nome, Descrição, Status, Notas, Data de Criação, Data de Atualização
 
 - REQUISITOS:
- - Permitir criar um Projeto;
- - Permitir alterar o Projeto;
- - Permitir deletar o Projeto;
 
- - Permitir criar uma Tarefa;
- - Permitir alterar a Tarefa;
- - Permitir deletar a Tarefa;
+  Projeto
+  - Permitir criar um Projeto; Permitir alterar o Projeto; Permitir deletar o Projeto
+
+  Tarefa
+  - Permitir criar uma Tarefa; Permitir alterar a Tarefa; Permitir deletar a Tarefa
 
 1.1.2. REGRAS DE NEGÓCIO
 
@@ -48,13 +49,23 @@ Aplicação para o gerenciamento de projetos e tarefas
  - Criação da conexão com o banco de dados [ok]
  - Criação das classes de controle (Acesso aos dados do banco [ok]
  - Criação das interfaces gráfica [ok]
-  - Criação da tela principal [ok]
-  - Criação do CellRederer Prazo [ok]
-  - Criação do CellRederer Editar e Deletar [ok]
-  - Criação da tela de Cadastro de Projeto [ok]
-  - Criação da tela de Cadastro de Tarefas [ok]
+   - Criação da tela principal [ok]
+   - Criação do CellRederer Prazo [ok]
+   - Criação do CellRederer Editar e Deletar [ok]
+   - Criação da tela de Cadastro de Projeto [ok]
+   - Criação da tela de Cadastro de Tarefas [ok]
  - Implementação dos eventos [ok]
   - Validações (campos de preenchimento obrigatório) [ok]
  - Ajustes finais [ok]
  - Teste da aplicação [ok]
  - Novas implementações e funcionalidades
+ 
+ 1.1.5. AGRADECIMENTOS REFERÊNCIAS
+ 
+ - Prof. Marcio Michelluzzi 
+ - ProWay
+ 
+ 1.1.6. OVERVIEWS
+ 
+ ![](src/main/resources/OVERVIEW1.png)
+ ![](src/main/resources/OVERVIEW2.png)
