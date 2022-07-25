@@ -25,7 +25,6 @@ public class ConnectionFactory {
             return DriverManager.getConnection(URL, USER, PASS);
         } catch (Exception ex) {
             throw new RuntimeException("Erro na conexão como o banco de dados", ex);
-
         }
     }
 
@@ -38,7 +37,6 @@ public class ConnectionFactory {
         } catch (Exception ex) {
             throw new RuntimeException("Erro ao fechar a conexão com o banco de dados", ex);
         }
-
     }
 
     //Fecha as conexões: connection e statement
@@ -47,14 +45,12 @@ public class ConnectionFactory {
             if (connection != null) {
                 connection.close();
             }
-
             if (statement != null) {
                 statement.close();
             }
         } catch (Exception ex) {
             throw new RuntimeException("Erro ao fechar a conexão com o banco de dados", ex);
         }
-
     }
 
     //Fecha as conexões: connection, statement e resultSet
@@ -63,18 +59,14 @@ public class ConnectionFactory {
             if (connection != null) {
                 connection.close();
             }
-
             if (statement != null) {
                 statement.close();
             }
-
             if (resultSet != null) {
                 resultSet.close();
             }
         } catch (Exception ex) {
             throw new RuntimeException("Erro ao fechar a conexão com o banco de dados", ex);
         }
-
     }
-
 }

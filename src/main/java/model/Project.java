@@ -19,7 +19,6 @@ public class Project {
     private Date createdAt;
     private Date updatedAt;
     
-    
     //Construtor
     public Project(int id, String name, String description, Date createdAt, Date updatedAt) {
         this.id = id;

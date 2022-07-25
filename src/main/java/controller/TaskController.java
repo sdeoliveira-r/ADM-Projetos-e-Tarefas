@@ -46,7 +46,6 @@ public class TaskController {
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
         }
-        
     }
     
     public void update(Task task) {
@@ -79,7 +78,6 @@ public class TaskController {
         } catch (SQLException ex) {
             throw new RuntimeException("Erro em atualizar a tarefa " + ex.getMessage(), ex);
         }
-        
     }
     
     public void removeById(int taskId) {
@@ -107,8 +105,8 @@ public class TaskController {
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
         }
-        
     }
+    
     public List<Task> getAll(int idProject) {
         
         String sql = "SELECT * FROM tasks WHERE idProject = ?";
@@ -148,7 +146,6 @@ public class TaskController {
                 task.setUpdatedAt(resultSet.getDate("updatedAt"));
                 
                 tasks.add(task);    
-               
             }
         } catch (SQLException ex) {
             throw new RuntimeException("Erro ao inserir a tarefa " + ex.getMessage(), ex);

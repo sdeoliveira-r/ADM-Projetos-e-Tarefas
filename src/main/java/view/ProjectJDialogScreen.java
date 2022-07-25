@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package view;
 
 import controller.ProjectController;
@@ -150,17 +145,24 @@ public class ProjectJDialogScreen extends javax.swing.JDialog {
         // TODO add your handling code here:
         
         try {
-            Project project = new Project();
-            project.setName(jTextFieldName.getText());
-            project.setDescription(jTextAreaDescription.getText());
-        
-            controller.save(project);
-            JOptionPane.showMessageDialog(rootPane, "Projeto salvo com sucesso");
-        
+            //Validação para campos de preenchimento obrigatório
+            if (!jTextFieldName.getText().equals("")){
+                //Salvando o projeto
+                Project project = new Project();
+                project.setName(jTextFieldName.getText());
+                project.setDescription(jTextAreaDescription.getText());
+                //Salvar
+                controller.save(project);
+                JOptionPane.showMessageDialog(rootPane, "Projeto salvo com sucesso");
+                //Fechar tela
+                this.dispose();
+            //Caso o campo nome não seja preenchido
+            } else {
+                JOptionPane.showMessageDialog(rootPane, "O projeto não pode ser salvo, pois o campo Nome não foi preenchido");
+            }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(rootPane, e.getMessage());
         }
-        this.dispose();
     }//GEN-LAST:event_jLabelToolBarSaveMouseClicked
 
     /**
@@ -204,7 +206,7 @@ public class ProjectJDialogScreen extends javax.swing.JDialog {
             }
         });
     }
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabelDescription;
     private javax.swing.JLabel jLabelName;

@@ -17,6 +17,7 @@ import model.Task;
  *
  * @author rafael
  */
+
 public class DeadlineColumnCellRederer extends DefaultTableCellRenderer {
     
     @Override
@@ -31,15 +32,11 @@ public class DeadlineColumnCellRederer extends DefaultTableCellRenderer {
         TaskTableModel taskModel = (TaskTableModel) table.getModel();
         Task task = taskModel.getTasks().get(row);
         
-        
         if (task.getDeadline().after(new Date())) {
-            label.setBackground(new Color(227,255,227));
+            label.setBackground(new Color(204,255,204));
         } else {
-            label.setBackground(new Color(255,227,227));
+            label.setBackground(new Color(255,204,204));
         }
         return label;
     }
 }
-    
-    
-

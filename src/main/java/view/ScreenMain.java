@@ -15,13 +15,16 @@ import java.util.List;
 import javax.swing.DefaultListModel;
 import model.Project;
 import model.Task;
+import util.ButtonColumnCellRederer;
 import util.DeadlineColumnCellRederer;
 import util.TaskTableModel;
+
 
 /**
  *
  * @author rafael
  */
+
 public class ScreenMain extends javax.swing.JFrame {
     
     ProjectController projectController;
@@ -34,12 +37,9 @@ public class ScreenMain extends javax.swing.JFrame {
     public ScreenMain() {
         
         initComponents();
-                
         initDataController();
         initComponentsModel();
-        
         decorateTableTask();
-        
     }
 
     /**
@@ -123,7 +123,7 @@ public class ScreenMain extends javax.swing.JFrame {
 
         jLabelToolBarSubTitle.setFont(new java.awt.Font("Loma", 1, 16)); // NOI18N
         jLabelToolBarSubTitle.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelToolBarSubTitle.setText("Anote tudo não esqueça nada");
+        jLabelToolBarSubTitle.setText("Anote tudo, não esqueça nada");
 
         javax.swing.GroupLayout jPanelToolBarLayout = new javax.swing.GroupLayout(jPanelToolBar);
         jPanelToolBar.setLayout(jPanelToolBarLayout);
@@ -261,7 +261,7 @@ public class ScreenMain extends javax.swing.JFrame {
         jLabelEmptyListTitle.setText("Nenhuma tarefa por aqui :D");
 
         jLabelEmptyListSubTitle.setFont(new java.awt.Font("Loma", 1, 14)); // NOI18N
-        jLabelEmptyListSubTitle.setForeground(new java.awt.Color(153, 153, 153));
+        jLabelEmptyListSubTitle.setForeground(new java.awt.Color(102, 102, 102));
         jLabelEmptyListSubTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelEmptyListSubTitle.setText("Clique no botão + para adicionar uma nova tarefa");
 
@@ -331,7 +331,6 @@ public class ScreenMain extends javax.swing.JFrame {
                 loadProjects();
             }
         });
-        
     }//GEN-LAST:event_jLabelProjectsAddMouseClicked
 
     private void jLabelTasksAddMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabelTasksAddMouseClicked
@@ -351,7 +350,6 @@ public class ScreenMain extends javax.swing.JFrame {
                 int projectIndex = jListProjects.getSelectedIndex();
                 Project project = (Project) projectsModel.get(projectIndex);
                 loadTasks(project.getId());
-                
             }
         } ); 
     }//GEN-LAST:event_jLabelTasksAddMouseClicked
@@ -373,6 +371,7 @@ public class ScreenMain extends javax.swing.JFrame {
                 break;
                 
             case 4:
+                
                 break;
                 
             case 5:
@@ -394,8 +393,6 @@ public class ScreenMain extends javax.swing.JFrame {
         int projectIndex = jListProjects.getSelectedIndex();
         Project project = (Project)projectsModel.get(projectIndex);
         loadTasks(project.getId());
-        
-        
     }//GEN-LAST:event_jListProjectsMouseClicked
 
     /**
@@ -467,8 +464,16 @@ public class ScreenMain extends javax.swing.JFrame {
         
         //Criando um sort automático para as colunas da table de tarefas
         jTableTasks.setAutoCreateRowSorter(true);
-      
+        
+        //Setando o CellRenderer na Column 4 para o Button "edit"
+        jTableTasks.getColumnModel().getColumn(4).setCellRenderer(
+                new ButtonColumnCellRederer("edit"));
+        
+        //Setando o CellRenderer na Column 5 para o Button "delete"
+        jTableTasks.getColumnModel().getColumn(5).setCellRenderer(
+                new ButtonColumnCellRederer("delete"));
     }
+    
     
     public void initDataController(){
         projectController = new ProjectController();
@@ -519,7 +524,6 @@ public class ScreenMain extends javax.swing.JFrame {
             jPanel5.add(jPanelEmptyList);
             jPanelEmptyList.setVisible(true);
             jPanelEmptyList.setSize(jPanel5.getWidth(), jPanel5.getHeight());
-            
         }
             
         }

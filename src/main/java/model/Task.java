@@ -117,17 +117,9 @@ public class Task {
         this.updatedAt = updatedAt;
     }
     
-    
     //Método toString, retorna uma String dos atributos e seus valores, 
     @Override
     public String toString() {
         return "Task{" + "id=" + id + ", idProject=" + idProject + ", name=" + name + ", description=" + description + ", notes=" + notes + ", isCompleted=" + isCompleted + ", deadline=" + deadline + ", createdAt=" + createdAt + ", updatedAt=" + updatedAt + '}';
     }
-    
-    
-    
-    
-    
-    
-    
 }

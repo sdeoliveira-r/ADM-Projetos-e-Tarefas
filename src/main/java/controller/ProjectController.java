@@ -15,7 +15,7 @@ import util.ConnectionFactory;
  */
 
 // Controladores de acesso ao banco de dados (CRUD) da tabela Projetos, 
-// métodos: save, update, removeById, getAll
+// métodos implementados: save, update, removeById, getAll
 
 public class ProjectController {
     
@@ -43,7 +43,6 @@ public class ProjectController {
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
         }
-       
     }
     
     public void update(Project project) {
@@ -73,7 +72,6 @@ public class ProjectController {
         } finally {
             ConnectionFactory.closeConnection(connection, statement);
         }
-        
     }
     
     // Lista todos os projetos, uma lista sem filtro
@@ -109,16 +107,13 @@ public class ProjectController {
                 
                 projects.add(project);
             }
-            
         } catch (SQLException ex) {
             throw new RuntimeException("Erro ao buscar projetos", ex);
         } finally {
             ConnectionFactory.closeConnection(connection, statement, resultSet);
         }
         return projects;
-      
     }
-    
     
     public void removeById(int idProject) {
         String sql = "DELETE FROM projects WHERE id = ?";
