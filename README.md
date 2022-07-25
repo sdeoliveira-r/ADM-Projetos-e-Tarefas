@@ -37,6 +37,7 @@ Aplicação para o gerenciamento de projetos e tarefas
 
 1.1.3. Definição das tecnologias utilizadas
 
+ - NetBeans IDE
  - Java
  - MySQL
 
@@ -48,11 +49,12 @@ Aplicação para o gerenciamento de projetos e tarefas
  - Criação das classes de controle (Acesso aos dados do banco [ok]
  - Criação das interfaces gráfica [ok]
   - Criação da tela principal [ok]
-  - Criação do CellRederer Prazo 
-  - Criação do CellRederer Editar e Deletar
+  - Criação do CellRederer Prazo [ok]
+  - Criação do CellRederer Editar e Deletar [ok]
   - Criação da tela de Cadastro de Projeto [ok]
   - Criação da tela de Cadastro de Tarefas [ok]
- - Implementação dos eventos
-  - Validações
- - Ajustes finais
- - Teste da aplicação
+ - Implementação dos eventos [ok]
+  - Validações (campos de preenchimento obrigatório) [ok]
+ - Ajustes finais [ok]
+ - Teste da aplicação [ok]
+ - Novas implementações e funcionalidades
