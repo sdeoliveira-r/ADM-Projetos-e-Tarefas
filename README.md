@@ -2,9 +2,9 @@
 Aplicação para o gerenciamento de projetos e tarefas
 
 
-1. Iniciando o projeto
+1. INICIANDO O PROJETO
 
-1.1. Defenição básica do projeto
+1.1. DEFINIÇÃO BÁSICA DO PROJETO
 
 - Nome: ADM Projetos e Tarefas.
 
@@ -12,15 +12,15 @@ Aplicação para o gerenciamento de projetos e tarefas
 
 - Objetivo: Resolver a questão de organização de tarefas de um ou vários projetos.
 
-1.1.1. Requisitos do projeto
+1.1.1. REQUESITOS DO PROJETO
 
-- Entidades:
+- ENTIDADES:
 
  - Projeto - Atributos: Nome, Descrição, Data de Criação, Data de Atualização.
 
  - Tarefa - Atributos: Nome, Descrição, Status, Observações, Prazo, Data de Criação, Data de Atualização.
 
-- Requisitos:
+- REQUISITOS:
  - Permitir criar um Projeto;
  - Permitir alterar o Projeto;
  - Permitir deletar o Projeto;
@@ -29,19 +29,19 @@ Aplicação para o gerenciamento de projetos e tarefas
  - Permitir alterar a Tarefa;
  - Permitir deletar a Tarefa;
 
-1.1.2. Regras de negócio
+1.1.2. REGRAS DE NEGÓCIO
 
  - Não conterá um sistema de login
  - Não haverá o conceito de usuário
  - Toda tarefa deve pertencer a um projeto 
 
-1.1.3. Definição das tecnologias utilizadas
+1.1.3. DEFINIÇÃO DAS TECNOLOGIAS UTILIZADAS
 
  - NetBeans IDE
  - Java
  - MySQL
 
-1.1.4. Etapas do desenvolvimento
+1.1.4. ETAPAS DO DESENVOLVIMENTO
 
 - Criação do banco de dados [ok]
  - Criação das classes de modelo [ok]
