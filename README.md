@@ -1,4 +1,4 @@
-# ADM-Projetos-e-Tarefas
+# adm-projetos-e-tarefas
 
 ###### Aplicação para o gerenciamento de projetos e tarefas
 ##
