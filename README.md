@@ -17,18 +17,18 @@
 - ENTIDADES:
 
   Projeto
-  - Atributos: Nome, Descrição, Data de Criação, Data de Atualização
+  - Atributos: nome, descrição, data de criação, data de atualização
 
   Tarefa
-  - Atributos: Nome, Descrição, Status, Notas, Data de Criação, Data de Atualização
+  - Atributos: nome, descrição, status, notas, data de criação, data de atualização
 
 - REQUISITOS:
 
-  Projeto
-  - Permitir criar um Projeto; Permitir alterar o Projeto; Permitir deletar o Projeto
+  Projetos
+  - Permitir criar projetos; Permitir alterar projetos; Permitir deletar projetos
 
   Tarefa
-  - Permitir criar uma Tarefa; Permitir alterar a Tarefa; Permitir deletar a Tarefa
+  - Permitir criar tarefas; Permitir alterar tarefas; Permitir deletar tarefas
 
 1.1.2. REGRAS DE NEGÓCIO
 
